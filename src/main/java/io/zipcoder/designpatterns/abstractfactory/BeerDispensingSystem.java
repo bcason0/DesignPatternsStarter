@@ -6,7 +6,9 @@ import io.zipcoder.designpatterns.factory.CupDispenser;
 import io.zipcoder.designpatterns.factory.DrinkDispenser;
 
 
-public class BeerDispensingSystem {
+public class BeerDispensingSystem extends DispensingSystem {
+
+
     public DrinkDispenser drinkDispenser(){
         return new BeerDispenser();
     }

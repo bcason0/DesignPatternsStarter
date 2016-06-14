@@ -6,6 +6,6 @@ package io.zipcoder.designpatterns.factory;
 public class BeerGlass implements Cup {
 
     public BeerGlass(){
-        System.out.println("BeerGlass");
+        System.out.println("Beer Glass");
     }
 }
