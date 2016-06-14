@@ -1,19 +1,18 @@
 package io.zipcoder.designpatterns.abstractfactory;
 
-import io.zipcoder.designpatterns.factory.CoffeeCupDispenser;
-import io.zipcoder.designpatterns.factory.CoffeeMachine;
+import io.zipcoder.designpatterns.factory.BeerDispenser;
+import io.zipcoder.designpatterns.factory.BeerGlassDispenser;
 import io.zipcoder.designpatterns.factory.CupDispenser;
 import io.zipcoder.designpatterns.factory.DrinkDispenser;
 
 
-public class CoffeeDispensingSystem{
+public class BeerDispensingSystem {
     public DrinkDispenser drinkDispenser(){
-        return new CoffeeMachine();
+        return new BeerDispenser();
     }
 
-
     public CupDispenser cupDispenser(){
-        return new CoffeeCupDispenser();
+        return new BeerGlassDispenser();
     }
 
 }
