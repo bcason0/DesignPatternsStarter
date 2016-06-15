@@ -8,12 +8,11 @@ import io.zipcoder.designpatterns.factory.DrinkDispenser;
 
 public class BeerDispensingSystem extends DispensingSystem {
 
-
     public DrinkDispenser drinkDispenser(){
-        return BeerDispenser.getInstance();
+        return new BeerDispenser();
     }
 
     public CupDispenser cupDispenser(){
-        return BeerGlassDispenser.getInstance();
+        return new BeerGlassDispenser();
     }
 }
