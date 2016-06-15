@@ -10,11 +10,10 @@ public class BeerDispensingSystem extends DispensingSystem {
 
 
     public DrinkDispenser drinkDispenser(){
-        return new BeerDispenser();
+        return BeerDispenser.getInstance();
     }
 
     public CupDispenser cupDispenser(){
-        return new BeerGlassDispenser();
+        return BeerGlassDispenser.getInstance();
     }
-
 }

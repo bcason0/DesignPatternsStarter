@@ -29,4 +29,5 @@ public class BeerDispensingSystemSpec {
         CupDispenser beerGlassDispenser = beerDispensingSystem.cupDispenser();
         assertTrue(beerGlassDispenser instanceof BeerGlassDispenser);
     }
+
 }
